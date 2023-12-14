@@ -18,6 +18,6 @@ export const SocialMedia = [
   {
     svg: Instagram,
     description: "Instagram",
-    url: "https://www.github.com/JeshuaBen",
+    url: "https://www.instagram.com/jeshuac/",
   },
 ];

@@ -1,7 +1,7 @@
 import * as S from "./styles";
-import { TSocialMediaItems } from "./types";
+import * as T from "./types";
 
-const SocialMediaItems: React.FC<TSocialMediaItems> = ({
+const SocialMediaItems: React.FC<T.SocialMediaItems> = ({
   Svg,
   description,
   onClick,

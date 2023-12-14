@@ -1,10 +1,10 @@
 import * as S from "./styles";
 import { MenuItems, SocialMedia } from "./constants";
-import { HeaderProps } from "./types";
+import * as T from "./types";
 import Logo from "../../assets/jc.svg?react";
 import SocialMediaItems from "../SocialMediaItems";
 
-const Header: React.FC<HeaderProps> = ({ isSelected }) => {
+const Header: React.FC<T.HeaderProps> = ({ isSelected }) => {
   const handleNavigate = (url: string) => {
     window.open(url, "_blank");
   };

@@ -20,4 +20,9 @@ export const Description = styled.span`
   font-family: ${({ theme }) => theme.FONT_FAMILY.IBM};
   line-height: ${({ theme }) => theme.LINE_HEIGHT.MEDIA_M_PARA_M};
   color: ${({ theme }) => theme.COLORS.WHITE};
+
+  @media screen and (min-width: 769px) and (max-width: 1280px) {
+    padding: 56px 0px;
+    display: none;
+  }
 `;

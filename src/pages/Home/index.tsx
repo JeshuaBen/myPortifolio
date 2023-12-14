@@ -1,11 +1,11 @@
 import Header from "../../components/Header";
-import * as S from "./styles";
+import Layout from "../../components/Layout";
 
 const Home = () => {
   return (
-    <S.Container>
+    <Layout>
       <Header isSelected={false} />
-    </S.Container>
+    </Layout>
   );
 };
 
