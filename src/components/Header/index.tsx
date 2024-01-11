@@ -3,6 +3,7 @@ import { MenuItems, SocialMedia } from "./constants";
 import * as T from "./types";
 import Logo from "../../assets/jc.svg?react";
 import SocialMediaItems from "../SocialMediaItems";
+import MoreInfo from "../../assets/moreInfo.svg?react";
 
 const Header: React.FC<T.HeaderProps> = ({ isSelected }) => {
   const handleNavigate = (url: string) => {
@@ -13,7 +14,11 @@ const Header: React.FC<T.HeaderProps> = ({ isSelected }) => {
     <S.Container>
       <S.Content>
         <S.LogoWrapper>
-          <Logo />
+          <Logo
+            style={{
+              width: "30%",
+            }}
+          />
           <S.LogoTitle>JeshuaCosta</S.LogoTitle>
         </S.LogoWrapper>
 
@@ -35,6 +40,10 @@ const Header: React.FC<T.HeaderProps> = ({ isSelected }) => {
             />
           ))}
         </S.SocialMediaWrapper>
+
+        <S.MoreInfoContainer>
+          <MoreInfo />
+        </S.MoreInfoContainer>
       </S.Content>
     </S.Container>
   );

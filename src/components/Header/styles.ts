@@ -16,12 +16,18 @@ export const Content = styled.div`
   justify-content: space-between;
   border-bottom: 1px solid ${({ theme }) => theme.COLORS.GRAY_500};
 
+  @media screen and (min-width: 300px) and (max-width: 768px) {
+    padding: 24px 0px;
+    font-size: ${({ theme }) => theme.FONT_SIZE.MENU_M};
+    line-height: ${({ theme }) => theme.LINE_HEIGHT.ARTICLE_U_MENU_M};
+  }
+
   @media screen and (min-width: 769px) and (max-width: 1024px) {
     padding: 52px 0px;
     font-size: ${({ theme }) => theme.FONT_SIZE.MENU_M};
     line-height: ${({ theme }) => theme.LINE_HEIGHT.ARTICLE_U_MENU_M};
   }
-  @media screen and (min-width: 1025px) and (max-width: 1280px) {
+  @media screen and (min-width: 1025px) and (max-width: 1440px) {
     padding: 56px 0px;
   }
 `;
@@ -44,12 +50,20 @@ export const LogoTitle = styled.span`
     font-size: ${({ theme }) => theme.FONT_SIZE.MENU_M};
     line-height: ${({ theme }) => theme.LINE_HEIGHT.ARTICLE_U_MENU_M};
   }
+  @media screen and (min-width: 300px) and (max-width: 768px) {
+    font-size: ${({ theme }) => theme.FONT_SIZE.MEDIA_M};
+    line-height: ${({ theme }) => theme.LINE_HEIGHT.MEDIA_M_PARA_M};
+  }
 `;
 
 export const MenuTagsWrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 2rem;
+
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
 `;
 
 export const MenuTags = styled.span<HeaderProps>`
@@ -70,10 +84,27 @@ export const MenuTags = styled.span<HeaderProps>`
     font-size: ${({ theme }) => theme.FONT_SIZE.BUTTON_U};
     line-height: ${({ theme }) => theme.LINE_HEIGHT.BUTTON_U};
   }
+
+  @media screen and (min-width: 300px) and (max-width: 768px) {
+    font-size: ${({ theme }) => theme.FONT_SIZE.MEDIA_M};
+    line-height: ${({ theme }) => theme.LINE_HEIGHT.MEDIA_M_PARA_M};
+  }
 `;
 
 export const SocialMediaWrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 2rem;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
+
+export const MoreInfoContainer = styled.div`
+  display: flex;
+  align-items: center;
+  @media screen and (min-width: 769px) {
+    display: none;
+  }
 `;
