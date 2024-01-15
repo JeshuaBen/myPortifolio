@@ -77,7 +77,7 @@ export const MenuTags = styled.span<HeaderProps>`
   ${({ isSelected }) =>
     isSelected &&
     css`
-      color: ${({ theme }) => theme.COLORS.CIAN};
+      color: ${({ theme }) => theme.COLORS.GREEN200};
     `}
 
   @media screen and (min-width: 769px) and (max-width: 1024px) {

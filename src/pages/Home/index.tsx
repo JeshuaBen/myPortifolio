@@ -1,10 +1,15 @@
-import Header from "../../components/Header";
 import Layout from "../../components/Layout";
+import ProfileBox from "../../components/ProfileBox";
+import * as S from "./styles";
 
-const Home = () => {
+const Home: React.FC = () => {
   return (
     <Layout>
-      <Header isSelected={false} />
+      <S.Container>
+        <S.Title>Full-Stack Developer</S.Title>
+
+        <ProfileBox />
+      </S.Container>
     </Layout>
   );
 };

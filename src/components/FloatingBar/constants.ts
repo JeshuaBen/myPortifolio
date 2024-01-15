@@ -6,15 +6,11 @@ import IconMonitor from "../../assets/iconMonitor.svg?react";
 
 export const FloatingBarItems: TFloatingBar[] = [
   {
-    svg: IconMail,
-    description: "",
-    isSelected: false,
-  },
-  {
     svg: IconGrid,
     description: "",
     isSelected: false,
   },
+
   {
     svg: IconUser,
     description: "",
@@ -22,6 +18,11 @@ export const FloatingBarItems: TFloatingBar[] = [
   },
   {
     svg: IconMonitor,
+    description: "",
+    isSelected: false,
+  },
+  {
+    svg: IconMail,
     description: "",
     isSelected: false,
   },
