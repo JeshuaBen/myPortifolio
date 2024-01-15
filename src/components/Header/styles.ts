@@ -66,7 +66,32 @@ export const MenuTagsWrapper = styled.div`
   }
 `;
 
-export const MenuTags = styled.span<HeaderProps>`
+export const Home = styled.span<HeaderProps>`
+  font-family: ${({ theme }) => theme.FONT_FAMILY.IBM};
+  font-weight: ${({ theme }) => theme.FONT_WEIGHT.MEDIUM};
+  font-size: ${({ theme }) => theme.FONT_SIZE.MENU_M};
+  line-height: ${({ theme }) => theme.LINE_HEIGHT.ARTICLE_U_MENU_M};
+  color: ${({ theme }) => theme.COLORS.WHITE};
+  cursor: pointer;
+
+  ${({ isSelected }) =>
+    isSelected &&
+    css`
+      color: ${({ theme }) => theme.COLORS.GREEN200};
+    `}
+
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    font-size: ${({ theme }) => theme.FONT_SIZE.BUTTON_U};
+    line-height: ${({ theme }) => theme.LINE_HEIGHT.BUTTON_U};
+  }
+
+  @media screen and (min-width: 300px) and (max-width: 768px) {
+    font-size: ${({ theme }) => theme.FONT_SIZE.MEDIA_M};
+    line-height: ${({ theme }) => theme.LINE_HEIGHT.MEDIA_M_PARA_M};
+  }
+`;
+
+export const Projects = styled.span<HeaderProps>`
   font-family: ${({ theme }) => theme.FONT_FAMILY.IBM};
   font-weight: ${({ theme }) => theme.FONT_WEIGHT.MEDIUM};
   font-size: ${({ theme }) => theme.FONT_SIZE.MENU_M};

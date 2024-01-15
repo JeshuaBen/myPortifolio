@@ -6,9 +6,11 @@ const Home: React.FC = () => {
   return (
     <Layout>
       <S.Container>
-        <S.Title>Full-Stack Developer</S.Title>
+        <S.Title>Fullstack Developer</S.Title>
 
-        <ProfileBox />
+        <S.Content>
+          <ProfileBox />
+        </S.Content>
       </S.Container>
     </Layout>
   );

@@ -4,6 +4,7 @@ import Mail from "../../assets/mail.svg?react";
 import MapPin from "../../assets/mapPin.svg?react";
 import Briefcase from "../../assets/briefcase.svg?react";
 import Link from "../../assets/link.svg?react";
+import { Tecnologies } from "./contants";
 
 const PersonalInfo: React.FC<T.TPersonalInfo> = ({
   email,
@@ -38,6 +39,14 @@ const PersonalInfo: React.FC<T.TPersonalInfo> = ({
           <S.InfoDescrption>{info.description}</S.InfoDescrption>
         </S.InfoContainer>
       ))}
+
+      <S.TagsWrapper>
+        {Tecnologies.map((tecnology, index) => (
+          <S.Tags key={index}>
+            <S.Tag>{tecnology}</S.Tag>
+          </S.Tags>
+        ))}
+      </S.TagsWrapper>
     </S.Container>
   );
 };

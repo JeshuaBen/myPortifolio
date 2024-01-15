@@ -2,7 +2,14 @@ import Github from "../../assets/github.svg?react";
 import Linkedin from "../../assets/linkedin.svg?react";
 import Instagram from "../../assets/instagram.svg?react";
 
-export const MenuItems = ["Home", "Projects"];
+export const MenuItems = [
+  {
+    title: "Home",
+  },
+  {
+    title: "Projects",
+  },
+];
 
 export const SocialMedia = [
   {

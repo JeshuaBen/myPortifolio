@@ -4,8 +4,5 @@ export const Tecnologies = [
   "REACT.JS",
   "REACT NATIVE",
   "NODE.JS",
-  "EXPRESS",
-  "TYPESCRIPT",
-  "JEST",
   "KOTLIN",
 ];

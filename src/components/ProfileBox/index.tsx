@@ -5,19 +5,19 @@ const ProfileBox: React.FC = () => {
   return (
     <S.Container>
       <S.ImageContainer>
-        <S.Image />
+        <S.Image src="https://avatars.githubusercontent.com/u/89667317?v=4" />
       </S.ImageContainer>
 
       <S.NameWrapper>
         <S.Name>Jeshua Ben </S.Name>
-        <S.Description>FullStack Developer</S.Description>
+        <S.Description>Full-stack Developer</S.Description>
       </S.NameWrapper>
 
       <PersonalInfo
         email="jeshuacostafer@gmail.com"
-        experience=""
-        jobDescription=""
-        nacionality=""
+        nacionality="João Pessoa, PB - Brasil."
+        jobDescription="Full-time | Freelancer"
+        experience="2 anos e 6 meses"
       />
     </S.Container>
   );
