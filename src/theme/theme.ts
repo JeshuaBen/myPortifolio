@@ -43,7 +43,7 @@ export default {
     MEDIA_M: "1rem",
     PARA_M_CODE_M: "1rem",
     CODE_M_LABEL_U_M_L: "0.875rem",
-    BG_TEXT_U: "7.313rem",
+    BG_TEXT_U: "6rem",
   },
 
   LINE_HEIGHT: {
