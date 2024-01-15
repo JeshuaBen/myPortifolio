@@ -5,7 +5,10 @@ import Logo from "../../assets/jc.svg?react";
 import SocialMediaItems from "../SocialMediaItems";
 import MoreInfo from "../../assets/moreInfo.svg?react";
 
-const Header: React.FC<T.HeaderProps> = ({ isSelected }) => {
+const Header: React.FC<T.HeaderProps> = ({
+  isSelected,
+  handleChangeSelection,
+}) => {
   const handleNavigate = (url: string) => {
     window.open(url, "_blank");
   };
@@ -24,7 +27,11 @@ const Header: React.FC<T.HeaderProps> = ({ isSelected }) => {
 
         <S.MenuTagsWrapper>
           {MenuItems.map((item, key) => (
-            <S.MenuTags isSelected={isSelected} key={key}>
+            <S.MenuTags
+              isSelected={isSelected}
+              key={key}
+              onClick={handleChangeSelection}
+            >
               {item}
             </S.MenuTags>
           ))}

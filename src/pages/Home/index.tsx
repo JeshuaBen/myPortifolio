@@ -1,10 +1,16 @@
+import { useState } from "react";
 import Header from "../../components/Header";
 import Layout from "../../components/Layout";
 
-const Home = () => {
+const Home: React.FC = () => {
+  const [selectedItem, setSelectedItem] = useState<boolean>(false);
+
   return (
     <Layout>
-      <Header isSelected={false} />
+      <Header
+        isSelected={selectedItem}
+        handleChangeSelection={() => setSelectedItem((prev) => !prev)}
+      />
     </Layout>
   );
 };
